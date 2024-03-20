@@ -1,0 +1,6 @@
+@tailwind components;
+@layer components {
+  .input {
+    @apply p-3 rounded-[10px] border border-[#e6e7ee] bg-[#f7fbff]  focus:border-slate-900;
+  }
+}
