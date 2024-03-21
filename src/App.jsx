@@ -1,9 +1,9 @@
 import "./App.css";
-import Login from "./Component/Login/Login";
+import AppRouter from "./router/AppRouter";
 function App() {
   return (
     <>
-      <Login />
+      <AppRouter />
     </>
   );
 }

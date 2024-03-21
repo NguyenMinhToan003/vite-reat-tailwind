@@ -5,13 +5,13 @@ import "./Login.css";
 const Login = () => {
   return (
     <>
-      <div className=" grid lg:grid-cols-2 w-screen h-lvh p-7 gap-7 text-primary grid-cols-1">
+      <div className=" grid lg:grid-cols-2 w-full p-7  text-primary grid-cols-1">
         <div className=" flex flex-row justify-center items-center h-full ">
           <div className="max-w-[25rem]">
-            <h3 className="font-medium text-4xl text-[#0c1421] leading-2 mb-5">
+            <h3 className="font-medium text-4xl text-[#0c1421]  mb-5">
               Welcome Back 👋
             </h3>
-            <span className="tracking-normal leading-5">
+            <span className="tracking-wide ">
               Today is a new day. It's your day. Your shape it. Sign in to start{" "}
               management your project
             </span>
@@ -57,10 +57,13 @@ const Login = () => {
               <span>Don't have an account ?</span>
               <a className="text-[#486ced] cursor-pointer">Signup</a>
             </span>
+            <div className="text-center text-[#959CB6] uppercase mt-9">
+              © 2023 ALL RIGHTS RESERVED
+            </div>
           </div>
         </div>
-        <div className="w-full h-full">
-          <img src={Image} className="object-cover" />
+        <div>
+          <img src={Image} className="aspect-auto w-full" />
         </div>
       </div>
     </>

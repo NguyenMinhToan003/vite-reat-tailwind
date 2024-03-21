@@ -6,6 +6,7 @@ export default {
       fontFamily: {
         barlow: ['"Barlow Semi Condensed"', "sans-serif"],
         poppins: ['"Poppins"', "sans-serif"],
+        roboto: ['"Roboto Condensed"', "sans-serif"],
       },
       colors: {
         primary: "#737a8e",
