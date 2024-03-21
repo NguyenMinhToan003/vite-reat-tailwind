@@ -1,19 +1,27 @@
 import IconSearch from "../../assets/image/Search";
 import IconPhone from "../../assets/image/Phone";
+import { NavLink } from "react-router-dom";
 
 const Nav = () => {
-  const link = ["Trang Chu", "Truyen", "Sach", "Hoc Lieu"];
+  const nav = [
+    { title: "Trang Chu", link: "/" },
+    { title: "Truyen", link: "/truyen" },
+    { title: "Sach", link: "/sach" },
+    { title: "Hoc Lieu", link: "/hoclieu" },
+  ];
   return (
     <>
       <div className="bg-[#3a3a3c] text-[#ececed] xl:p-0 p-2">
         <div className="container mx-auto ">
           <div className="flex xl:flex-row items-center gap-5  justify-between min-w-28 flex-col">
             <ul className="grid grid-cols-4 min-w-max">
-              {link.map((item, index) => {
+              {nav.map((item, index) => {
                 return (
-                  <li className="px-10 py-5 hover:bg-[#bf2c24] text-center cursor-pointer">
-                    {item}
-                  </li>
+                  <NavLink
+                    to={item.link}
+                    className="px-6 py-5 hover:bg-[#bf2c24] text-center cursor-pointer transition ease-in-out delay-75">
+                    {item.title}
+                  </NavLink>
                 );
               })}
             </ul>
